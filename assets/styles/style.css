@@ -68,3 +68,54 @@ header .line {
     margin-left: 20px;
 }   
 
+main .banner {
+    background-image: url('../images/bg.jpg');
+    background-position-y: -100px;
+    background-size: cover;
+
+    height: calc(100vh - 110px);
+    width: 100%;
+    padding: 30px auto;
+}
+
+section .container {
+    font-family: 'Oswald', sans-serif;
+}
+
+section .container h1:nth-child(1){
+    padding-top: 100px;
+
+}
+section .container h1{
+    width: calc(1140px / 2);
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1.1;
+}
+
+section .container p{
+    width: calc(1140px / 2);
+    margin: 40px 0;
+    font-family: 'open-sans', sans-serif;
+}
+
+section .banner--products {
+    display: flex;
+    width: calc(1140px / 2);
+}
+
+section .product {
+    background-color: #117050;
+    width: fit-content;
+    border-radius: 50%;
+
+    display: flex;
+    margin: auto 15px;
+}
+
+section .product img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    padding: 5px;
+}
