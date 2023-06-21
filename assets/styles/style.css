@@ -235,7 +235,7 @@ section .area3--content {
 }
 
 section.area3 .area3--content .button {
-    width: 129.9px;
+    width: fit-content;
 }
 
 section .area3--img { 
@@ -247,7 +247,10 @@ section .area3--img {
     background-repeat: no-repeat;
 }
 
-/* section.area4 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
+section.area4 {
+    background-image: url('../images/bg3.jpg');
+}
+
+section .area4--content {
+    
+}
