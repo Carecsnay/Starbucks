@@ -447,7 +447,121 @@ footer p a:hover {
     }
 }
 
-@media (min-width:320px) and (max-width:425px) {
+@media (min-width:375px) and (max-width:425px) {
+    .header--search input {
+        font-size: 16px;
+        padding: 8px 15px;
+        border: 1px solid #a2a2a2;
+        width: 180px;
+    }
+
+    header .container {
+        justify-content: center;
+    }
+
+    header .header--left {
+        margin-right: 15px;
+    }
+
+    section.banner .container {
+        padding: 40px 15px;
+    }
+
+    section.banner .container h1 {
+        padding-top: 80px;
+        font-size: 3rem;
+    }
+
+    section.banner {
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: calc(100vh);
+    }
+
+    section .container p {
+        max-width: 250px;
+        padding: 20px 0;
+        font-size: smaller;
+    }
+
+    section .product {
+        background-color: #117050;
+        width: fit-content;
+        border-radius: 50%;
+
+        display: flex;
+        margin: auto 5px;
+    }
+
+    section .product img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        padding: 3px;
+    }
+
+    section.banner .container,
+    section .area1--content,
+    section .area2--content,
+    section .area3--content,
+    section .area4--content {
+        padding: 30px;
+    }
+
+    section.area1 {
+        grid-template-columns: 1fr;
+    }
+    section .area1--img1 {
+       display: none;
+    }
+
+    section.area2 {
+        grid-template-columns: 1fr;
+    }
+
+    section.area3 {
+        grid-template-columns: 1fr;
+    }
+
+    section.area4 {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section .area--text {
+        font-size: 15px;
+        padding: 30px 0 15px 0;
+        line-height: 1.6;
+    }
+
+    section .button {
+        font-size: 15px;
+    }
+    
+    footer .container {
+        padding: 20px;
+        height: 100px;
+    }
+
+    footer .social--list img {
+        width: 22px;
+        height: 22px;
+        border-radius: 5px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:374px) {
     .header--search input {
         font-size: 16px;
         padding: 8px 15px;
@@ -498,8 +612,8 @@ footer p a:hover {
 
     section .product img {
         border-radius: 50%;
-        width: 85px;
-        height: 85px;
+        width: 70px;
+        height: 70px;
         padding: 3px;
     }
 
@@ -513,6 +627,9 @@ footer p a:hover {
 
     section.area1 {
         grid-template-columns: 1fr;
+    }
+    section .area1--img1 {
+       display: none;
     }
 
     section.area2 {
