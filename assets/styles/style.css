@@ -114,33 +114,32 @@ section .button:hover {
     margin-left: 20px;
 }
 
-main .banner {
+section.banner {
     background-image: url('../images/bg.jpg');
     background-position-y: -50px;
     background-size: cover;
     background-repeat: no-repeat;
 
     height: calc(100vh - 110px);
-    width: 100%;
 }
 
 section .container {
     font-family: 'Oswald', sans-serif;
 }
 
-section .container h1:nth-child(1) {
-    padding-top: 100px;
+section .container h1 {
+    padding-top: 50px;
 }
 
 section .container p {
-    width: calc(1140px / 2);
+    width: fit-content;
     padding: 40px 0;
     font-family: 'open-sans', sans-serif;
 }
 
 section .banner--products {
     display: flex;
-    width: calc(1140px / 2);
+    width: fit-content;
 }
 
 section .product {
@@ -344,15 +343,7 @@ footer p a:hover {
     text-decoration: none;
 }
 
-@media (max-width:1440px) {
-    main .banner {
-        background-position: left;
-        height: 50vh;
-        width: 100%;
-    }
-}
-
-@media (max-width:1024px) {
+@media (min-width: 769px) and (max-width:1140px) {
     .header--area {
         margin: auto 30px;
     }
@@ -368,12 +359,10 @@ footer p a:hover {
 
     section .banner--products {
         display: flex;
-        width: calc(1024px / 2);
     }
 
     section .product {
         background-color: #117050;
-        width: fit-content;
         border-radius: 50%;
 
         display: flex;
@@ -387,11 +376,6 @@ footer p a:hover {
         padding: 5px;
     }
 
-    section.area4 {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     section .area4--img {
         grid-column: 2 / span 2;
         grid-row: 1 / span 1;
@@ -403,10 +387,23 @@ footer p a:hover {
     }
 }
 
-@media (max-width:768px) {
-    section .container h1:nth-child(1) {
-        padding-top: 0px;
+@media (min-width:426px) and (max-width:768px) {
+    .header--area {
+        margin: auto 30px;
+    }
 
+    section.banner {
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 100vh;
+    }
+
+    section .container h1 {
+        padding-top: 50px;
+        font-size: 5rem;
     }
 
     section.banner .container,
@@ -417,9 +414,29 @@ footer p a:hover {
         padding: 45px;
     }
 
+    section .product {
+        background-color: #117050;
+        width: fit-content;
+        border-radius: 50%;
+
+        display: flex;
+        margin: auto 5px;
+    }
+
+    section .product img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        padding: 3px;
+    }
+
+    section.area4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* @media (max-width:425px) {
+@media (min-width:320px) and (max-width:425px) {
     header .container {
         justify-content: center;
     }
@@ -428,13 +445,84 @@ footer p a:hover {
         margin-right: 15px;
     }
 
+    section.banner .container {
+        padding: 40px 15px;
+    }
+
     section.banner .container h1 {
+        padding-top: 80px;
         font-size: 3rem;
     }
 
-    section .container p {
-        max-width: 425px;
-        padding: 40px 0;
-        font-family: 'open-sans', sans-serif;
+    section.banner {
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: calc(100vh);
     }
-} */
+
+    section .container p {
+        max-width: 250px;
+        padding: 20px 0;
+        font-size: smaller;
+    }
+
+    section .product {
+        background-color: #117050;
+        width: fit-content;
+        border-radius: 50%;
+
+        display: flex;
+        margin: auto 5px;
+    }
+
+    section .product img {
+        border-radius: 50%;
+        width: 85px;
+        height: 85px;
+        padding: 3px;
+    }
+
+    section.banner .container,
+    section .area1--content,
+    section .area2--content,
+    section .area3--content,
+    section .area4--content {
+        padding: 35px;
+    }
+
+    section.area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    section.area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    section.area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    section .area--text {
+        font-size: 15px;
+        padding: 30px 0 15px 0;
+        line-height: 1.6;
+    }
+
+    section .button {
+        font-size: 15px;
+    }
+
+    footer .container {
+        padding: 50px 25px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
