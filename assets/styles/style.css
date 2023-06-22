@@ -122,7 +122,6 @@ main .banner {
 
     height: calc(100vh - 110px);
     width: 100%;
-    padding: 30px auto;
 }
 
 section .container {
@@ -277,7 +276,7 @@ section .area4--img {
 
 section.area5 .area5--img {
     background-image: url('../images/bg4.jpg');
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     background-color: #e8e9ee;
@@ -347,7 +346,9 @@ footer p a:hover {
 
 @media (max-width:1440px) {
     main .banner {
-        background-position-y: 0;
+        background-position: left;
+        height: 50vh;
+        width: 100%;
     }
 }
 
