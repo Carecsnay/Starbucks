@@ -116,7 +116,6 @@ section .button:hover {
 
 section.banner {
     background-image: url('../images/bg.jpg');
-    background-position-y: -50px;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -352,7 +351,7 @@ footer p a:hover {
         padding: 0 70px;
     }
 
-    section .container h1:nth-child(1) {
+    section .container h1 {
         padding-top: 50px;
 
     }
@@ -384,6 +383,10 @@ footer p a:hover {
         background-position: left;
         background-position-x: -80px;
         background-repeat: no-repeat;
+    }
+
+    footer p {
+        font-size: 13px;
     }
 }
 
@@ -434,9 +437,24 @@ footer p a:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    footer .container {
+        padding: 50px 25px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
 }
 
 @media (min-width:320px) and (max-width:425px) {
+    .header--search input {
+        font-size: 16px;
+        padding: 8px 15px;
+        border: 1px solid #a2a2a2;
+        width: 100px;
+    }
+
     header .container {
         justify-content: center;
     }
@@ -490,25 +508,29 @@ footer p a:hover {
     section .area2--content,
     section .area3--content,
     section .area4--content {
-        padding: 35px;
+        padding: 30px;
     }
 
     section.area1 {
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 1fr;
     }
 
     section.area2 {
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: 1fr;
     }
 
     section.area3 {
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 1fr;
+    }
+
+    section.area4 {
+        grid-template-columns: 1fr;
     }
 
     h2 {
         font-size: 2rem;
     }
-    
+
     section .area--text {
         font-size: 15px;
         padding: 30px 0 15px 0;
@@ -518,11 +540,20 @@ footer p a:hover {
     section .button {
         font-size: 15px;
     }
-
+    
     footer .container {
-        padding: 50px 25px;
+        padding: 20px;
+        height: 100px;
     }
+
+    footer .social--list img {
+        width: 22px;
+        height: 22px;
+        border-radius: 5px;
+    }
+
     footer p {
-        font-size: 13px;
+        font-size: 10px;
     }
+
 }
