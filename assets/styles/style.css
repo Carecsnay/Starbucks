@@ -1,5 +1,5 @@
 /*FONT IMPORT*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -61,19 +61,19 @@ section .button:hover {
 
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
 }
 
-.header--area { 
+.header--area {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
 }
 
-.header--left img{
+.header--left img {
     width: 64px;
     height: 64px;
 }
@@ -84,8 +84,9 @@ section .button:hover {
 }
 
 /*RESET CSS INPUT & BUTTON*/
-.header--search input, .header--search button { 
-    all: unset;    
+.header--search input,
+.header--search button {
+    all: unset;
 }
 
 .header--search input {
@@ -103,7 +104,7 @@ section .button:hover {
 }
 
 .header--search button:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .header--right nav .menu img {
@@ -111,7 +112,7 @@ section .button:hover {
     width: 24px;
     align-items: center;
     margin-left: 20px;
-}   
+}
 
 main .banner {
     background-image: url('../images/bg.jpg');
@@ -128,12 +129,12 @@ section .container {
     font-family: 'Oswald', sans-serif;
 }
 
-section .container h1:nth-child(1){
+section .container h1:nth-child(1) {
     padding-top: 100px;
 
 }
 
-section .container p{
+section .container p {
     width: calc(1140px / 2);
     padding: 40px 0;
     font-family: 'open-sans', sans-serif;
@@ -169,7 +170,8 @@ section .area1--quote {
     padding: 20px 0 0 0;
 }
 
-section .area1--content, .area2--content {
+section .area1--content,
+.area2--content {
     padding: 90px;
     max-width: 630px;
     margin: auto;
@@ -185,8 +187,10 @@ section .area1--img1 {
 }
 
 section .area1--img2 {
-    grid-column: 2 / span 2; /*Or 2 / 3*/
-    grid-row: 1 / span 2; /*Or 1 / 3*/
+    grid-column: 2 / span 2;
+    /*Or 2 / 3*/
+    grid-row: 1 / span 2;
+    /*Or 1 / 3*/
     background-image: url('../images/f1.jpg');
     background-size: cover;
     background-position: center;
@@ -198,9 +202,9 @@ section.area2 {
     grid-template-columns: repeat(2, 1fr);
 }
 
-section .area2--img1 { 
+section .area2--img1 {
     grid-column: 1 / span 1;
-    grid-row: 1 / span 2; 
+    grid-row: 1 / span 2;
     background-image: url('../images/f3.jpg');
     background-size: cover;
     background-position: center;
@@ -218,7 +222,7 @@ section .area2--img2 {
 section.area3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
     background-image: url('../images/bg2.jpg');
     background-size: 70%;
     background-position: left bottom;
@@ -236,9 +240,11 @@ section .area3--content {
     line-height: 1.6rem;
 }
 
-section .area3--img { 
-    grid-column: 2 / span 2; /*Or 2 / 3*/
-    grid-row: 1 / span 1; /*Or 1 / 3*/
+section .area3--img {
+    grid-column: 2 / span 2;
+    /*Or 2 / 3*/
+    grid-row: 1 / span 1;
+    /*Or 1 / 3*/
     background-image: url('../images/f5.jpg');
     background-size: cover;
     background-position: center;
@@ -262,11 +268,11 @@ section .area4--content {
 
 section .area4--img {
     grid-column: 2 / span 3;
-    grid-row: 1 / span 2; 
+    grid-row: 1 / span 2;
 
     background-image: url('../images/bg3.jpg');
     background-size: cover;
-    background-position: left ;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -279,4 +285,63 @@ section.area5 .area5--img {
 
     height: 90vh;
     width: 100%;
+}
+
+footer {
+    background-color: #454545;
+    color: #eeeeee;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 200px;
+}
+
+footer .social--content {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+
+footer .social--list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+footer .social--list img {
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
+    border-radius: 6px;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    margin-left: 5px;
+}
+
+footer p a:hover{
+    color: #94eace;
+    text-decoration: none;
 }
