@@ -131,7 +131,6 @@ section .container {
 
 section .container h1:nth-child(1) {
     padding-top: 100px;
-
 }
 
 section .container p {
@@ -216,7 +215,7 @@ section .area2--img2 {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    height: 630px;
+    height: 0px;
 }
 
 section.area3 {
@@ -262,7 +261,7 @@ section .area4--content {
     justify-content: center;
 
     height: 750px;
-    padding: 80px;
+    padding: 90px;
     background-color: #e8e9ee;
 }
 
@@ -288,7 +287,7 @@ section.area5 .area5--img {
 }
 
 footer {
-    background-color: #454545;
+    background-color: #333333;
     color: #eeeeee;
 }
 
@@ -332,7 +331,7 @@ footer .social--list img {
     border-radius: 6px;
 }
 
-footer p a{
+footer p a {
     text-decoration: none;
     color: #a2a2a2;
     text-transform: uppercase;
@@ -341,7 +340,100 @@ footer p a{
     margin-left: 5px;
 }
 
-footer p a:hover{
+footer p a:hover {
     color: #94eace;
     text-decoration: none;
 }
+
+@media (max-width:1440px) {
+    main .banner {
+        background-position-y: 0;
+    }
+}
+
+@media (max-width:1024px) {
+    .header--area {
+        margin: auto 30px;
+    }
+
+    section.banner .container {
+        padding: 0 70px;
+    }
+
+    section .container h1:nth-child(1) {
+        padding-top: 50px;
+
+    }
+
+    section .banner--products {
+        display: flex;
+        width: calc(1024px / 2);
+    }
+
+    section .product {
+        background-color: #117050;
+        width: fit-content;
+        border-radius: 50%;
+
+        display: flex;
+        margin: auto 5px;
+    }
+
+    section .product img {
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        padding: 5px;
+    }
+
+    section.area4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section .area4--img {
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 1;
+
+        background-size: cover;
+        background-position: left;
+        background-position-x: -80px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:768px) {
+    section .container h1:nth-child(1) {
+        padding-top: 0px;
+
+    }
+
+    section.banner .container,
+    section .area1--content,
+    section .area2--content,
+    section .area3--content,
+    section .area4--content {
+        padding: 45px;
+    }
+
+}
+
+/* @media (max-width:425px) {
+    header .container {
+        justify-content: center;
+    }
+
+    header .header--left {
+        margin-right: 15px;
+    }
+
+    section.banner .container h1 {
+        font-size: 3rem;
+    }
+
+    section .container p {
+        max-width: 425px;
+        padding: 40px 0;
+        font-family: 'open-sans', sans-serif;
+    }
+} */
